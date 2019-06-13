@@ -1,0 +1,40 @@
+AppBundle\Entity\user:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\userRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '30'
+            nullable: true
+        lastName:
+            type: string
+            length: '30'
+            nullable: true
+        ci:
+            type: integer
+            nullable: true
+            unique: true
+        email:
+            type: string
+            length: '100'
+            nullable: true
+        password:
+            type: string
+            length: '32'
+            nullable: true
+        address:
+            type: string
+            length: '32'
+            nullable: true
+        phone:
+            type: integer
+            nullable: true
+            unique: true
+    lifecycleCallbacks: {  }

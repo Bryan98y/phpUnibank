@@ -1,0 +1,29 @@
+AppBundle\Entity\account:
+  type: entity
+  table: null
+  repositoryClass: AppBundle\Repository\accountRepository
+  id:
+    id:
+      type: integer
+      id: true
+      generator:
+        strategy: AUTO
+  fields:
+    numberAccount:
+      type: integer
+      nullable: true
+      column: NumberAccount
+    balance:
+      type: decimal
+      precision: '6'
+      scale: 0
+      nullable: true
+      column: Balance
+  oneToOne:
+    user:
+      targetEntity: AppBundle\Entity\user
+      joinColumn:
+        nombre: user_id
+        referencedColumnName: id
+
+  lifecycleCallbacks: {  }

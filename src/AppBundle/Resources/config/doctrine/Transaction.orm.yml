@@ -1,0 +1,32 @@
+AppBundle\Entity\Transaction:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\TransactionRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        idTransaction:
+            type: string
+            length: '30'
+            nullable: true
+            unique: true
+        typeTransaction:
+            type: string
+            length: '30'
+            nullable: true
+        amountTransaction:
+            type: decimal
+            precision: '6'
+            scale: 0
+            nullable: true
+            oneToOne:
+        account:
+            targetEntity: AppBundle\Entity\account
+            joinColumn:
+                nombre: account_id
+                referencedColumnName: id
+    lifecycleCallbacks: {  }
