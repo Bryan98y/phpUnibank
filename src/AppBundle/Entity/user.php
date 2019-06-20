@@ -1,6 +1,7 @@
 <?php
 
 namespace AppBundle\Entity;
+use JMS\Serializer\Annotation\Type;
 
 /**
  * user
@@ -8,32 +9,32 @@ namespace AppBundle\Entity;
 class user
 {
     /**
-     * @var int
+     * @Type("int")
      */
     private $id;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $name;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $lastName;
 
     /**
-     * @var int
+     * @Type("int")
      */
     private $ci;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $email;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $password;
 

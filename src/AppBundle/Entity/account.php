@@ -1,29 +1,28 @@
 <?php
 
 namespace AppBundle\Entity;
-
-/**
+use JMS\Serializer\Annotation\Type;/**
  * account
  */
 class account
 {
     /**
-     * @var int
+     * @Type("int")
      */
     private $id;
 
     /**
-     * @var int
+     * @Type("int")
      */
     private $numberAccount;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $balance;
 
     /**
-     * @var user
+     * @Type("user")
      */
     private $user;
 

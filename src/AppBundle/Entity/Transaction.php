@@ -1,29 +1,29 @@
 <?php
 
 namespace AppBundle\Entity;
-
+use JMS\Serializer\Annotation\Type;
 /**
  * Transaction
  */
 class Transaction
 {
     /**
-     * @var int
+     * @Type("int")
      */
     private $id;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $idTransaction;
 
     /**
-     * @var string
+     * @Type("String")
      */
     private $typeTransaction;
 
     /**
-     * @var string
+     * @Type("String")
      */
     public $account;
 
