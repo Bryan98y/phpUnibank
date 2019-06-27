@@ -23,7 +23,7 @@ class Transaction
     private $typeTransaction;
 
     /**
-     * @Type("String")
+     * @Type("AppBundle\Entity\Account")
      */
     public $account;
 

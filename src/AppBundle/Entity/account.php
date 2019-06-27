@@ -22,7 +22,7 @@ class account
     private $balance;
 
     /**
-     * @Type("user")
+     * @Type("AppBundle\Entity\User")
      */
     private $user;
 
